@@ -1,0 +1,135 @@
+:root {
+    /* Primary Colors */
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    /* Natutral */
+    --grey-500: hsl(234, 12%, 34%);
+    --grey-400: hsl(212, 6%, 44%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: var(--white);
+}
+
+/* Hearder */
+header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+header .main-heading {
+    color: var(--grey-400);
+    font-weight: normal;
+}
+
+header .second-h1 {
+    color: var(--grey-500)
+}
+
+header .main-text {
+    color: var(--grey-400);
+    margin-top: 15px;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media (max-width:375px) {
+
+    header .main-heading,
+    header .second-h1 {
+        font-size: 20px;
+    }
+
+    header .main-text {
+        font-size: 13px;
+    }
+}
+
+/* Hearder// */
+.container {
+    margin: 100px 20px;
+}
+
+.container .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width:765px) {
+    .container .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mid-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .box {
+    box-shadow: -1px 1px 10px hsl(180deg 62% 55% / 30%);
+    padding: 20px;
+    width: 300px;
+}
+
+.box.red {
+    border-top: 5px solid var(--red)
+}
+
+.box.cayn {
+    border-top: 5px solid var(--cyan);
+}
+
+.box.blue {
+    border-top: 5px solid var(--blue);
+}
+
+.box.yellow {
+    border-top: 5px solid var(--orange);
+}
+
+.container .boxes h2 {
+    /* text-align: center; */
+    margin: 0;
+    color: var(--grey-500);
+}
+
+.container .boxes p {
+    color: var(--grey-400);
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+.container .img-holder {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    display: block;
+    color: var(--grey-400);
+    font-size: 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--grey-500);
+}
